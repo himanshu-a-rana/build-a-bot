@@ -5,8 +5,10 @@
       <nav>
         <ul>
           <li class="nav-item">
+            <router-link class="nav-link" :to="{name: 'Home'}">
             <img src="./assets/build-a-bot-logo.png" class="logo">
             Build-a-Bot
+            </router-link>
           </li>
         </ul>
       </nav>
@@ -76,5 +78,9 @@ ul {
 .logo {
   vertical-align: middle;
   height: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherited;
 }
 </style>
