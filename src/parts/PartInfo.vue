@@ -14,11 +14,13 @@ import parts from '../data/parts';
 
 export default {
   name: 'PartInfo',
+  props: ['partType', 'id'],
   computed: {
     part() {
       // const partType = this.$route.params.partType;
       // const id = this.$route.params.id;
-      const { partType, id } = this.$route.params;
+      // const { partType, id } = this.$route.params;
+      const { partType, id } = this;
       return parts[partType].find(part => part.id === +id);
     },
   },
