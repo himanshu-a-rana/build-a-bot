@@ -68,6 +68,7 @@ export default {
       this.$router.push({
         name: 'Parts',
         params: {
+          // id: 'foo',
           id: this.selectedPart.id,
           partType: this.selectedPart.type,
         },
