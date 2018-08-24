@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import RobotBuilder from '../builder/RobotBuilder.vue';
 import HomePage from '../Home/HomePage.vue';
 import BrowseParts from '../parts/BrowseParts.vue';
 import PartInfo from '../parts/PartInfo.vue';
@@ -13,6 +14,7 @@ import SidebarStandard from '../sidebar/SidebarStandard.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'Home',
@@ -26,7 +28,7 @@ export default new Router({
     name: 'Build',
     // component: RobotBuilder,
     components: {
-      default: HomePage,
+      default: RobotBuilder,
       sidebar: SidebarBuild,
     },
   }, {
