@@ -12,21 +12,22 @@
       </nav>
     </header>
     <main>
-      <RobotBuilder/>
+      <!-- <RobotBuilder/> -->
+      <router-view/>
     </main>
   </div>
 </template>
 
 <script>
 // import HomePage from './Home/HomePage.vue';
-import RobotBuilder from './builder/RobotBuilder.vue';
+// import RobotBuilder from './builder/RobotBuilder.vue';
 
 export default {
   name: 'app',
-  components: {
-    // HomePage,
-    RobotBuilder,
-  },
+  // components: {
+  //   // HomePage,
+  //   RobotBuilder,
+  // },
 };
 </script>
 
