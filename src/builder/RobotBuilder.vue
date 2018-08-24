@@ -90,7 +90,7 @@
         <button class="next-selector" v-on:click="selectNextBases()">&#9658;</button>
       </div> -->
     </div>
-    <div>
+    <!-- <div>
       <h1>Cart</h1>
       <table>
         <thead>
@@ -106,7 +106,7 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -392,15 +392,15 @@ export default {
   padding: 3px;
   font-size: 16px;
 }
-td,
-th {
-  text-align: left;
-  padding: 5px;
-  padding-right: 20px;
-}
-.cost {
-  text-align: right;
-}
+// td,
+// th {
+//   text-align: left;
+//   padding: 5px;
+//   padding-right: 20px;
+// }
+// .cost {
+//   text-align: right;
+// }
 .sale-border {
   border: 3px solid red;
 }
