@@ -164,7 +164,8 @@ export default {
   // mixins: [createdHookMixins],
   computed: {
     availableParts() {
-      return this.$store.state.parts;
+      // return this.$store.state.parts;
+      return this.$store.state.robots.parts;
     },
     saleBorderClass() {
       return this.selectedRobot.head.onSale ? 'sale-border' : '';
