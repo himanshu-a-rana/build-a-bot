@@ -10,10 +10,12 @@
 </template>
 
 <script>
-import parts from '../data/parts';
+// import parts from '../data/parts';
+import getPartsMixin from './get-parts-mixin';
 
 export default {
   name: 'PartInfo',
+  mixins: [getPartsMixin],
   // props: ['partType', 'id'],
   props: {
     partType: {
@@ -32,7 +34,8 @@ export default {
       // const id = this.$route.params.id;
       // const { partType, id } = this.$route.params;
       const { partType, id } = this;
-      return parts[partType].find(part => part.id === +id);
+      // return parts[partType].find(part => part.id === +id);
+      return this.parts[partType].find(part => part.id === +id);
     },
   },
   // data() {
