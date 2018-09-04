@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    Root Foo: {{rootFoo}} <br>
+    Robots Foo: {{rootFoo}} <br>
+    Users Foo: {{rootFoo}} <br>
+    <br>
+    Root Getter Foo: {{rootGetterFoo}} <br>
+    Robots Getter Foo: {{robotsGetterFoo}} <br>
+    Users Getter Foo: {{usersGetterFoo}} <br>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <header>
       <nav>
@@ -45,9 +52,27 @@
 export default {
   name: 'app',
   computed: {
+    rootFoo() {
+      return this.$store.state.foo;
+    },
+    robotsFoo() {
+      return this.$store.state.foo;
+    },
+    usersFoo() {
+      return this.$store.state.foo;
+    },
     cart() {
       // return this.$store.state.cart;
       return this.$store.state.robots.cart;
+    },
+    rootGetterFoo() {
+      return this.$store.getters.foo;
+    },
+    robotsGetterFoo() {
+      return this.$store.getters['robots/foo'];
+    },
+    usersGetterFoo() {
+      return this.$store.getters['users/foo'];
     },
   },
   // components: {
